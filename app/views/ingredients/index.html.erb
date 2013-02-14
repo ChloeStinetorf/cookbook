@@ -1,0 +1,13 @@
+<h1>Ingredients</h1>
+<br>
+<% @ingredients.each do |ingredient| %><br>
+  <%= link_to(ingredient.name, ingredient) %><br>
+ Measurements: <%= ingredient.measurements %><br>
+ Cost: <%= ingredient.cost %><br>
+ <%= image_tag(ingredient.image) %><br>
+<% end %>
+
+
+
+
+
